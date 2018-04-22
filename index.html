@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Kalendarz - test - Redmine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="SCWVZpIdkMFNtLBYUTX4/nYIKP32h38U24ITfk3HVnTYIsnfNIQp6s6loAw4s7x3qjuv+gkWRYRHXGr1mjM4Ug==" />
+<!--<link rel='shortcut icon' href='/favicon.ico' />-->
+<link rel="stylesheet" media="all" href="http://redmine-dev.giat.pl/stylesheets/jquery/jquery-ui-1.11.0.css" />
+<link rel="stylesheet" media="all" href="http://redmine-dev.giat.pl/themes/circle/stylesheets/application.css" />
+<link rel="stylesheet" media="all" href="http://redmine-dev.giat.pl/themes/circle/stylesheets/responsive.css" />
+
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="my-dialog-style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery-3.3.1.js"></script>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+    </script>
+<script src="index_files/popup.js"></script>
+
+
+
+
+
+<script src="http://redmine-dev.giat.pl/javascripts/jquery-1.11.1-ui-1.11.0-ujs-3.1.4.js"></script>
+<script src="http://redmine-dev.giat.pl/javascripts/application.js"></script>
+<script src="http://redmine-dev.giat.pl/javascripts/responsive.js"></script>
+<script>
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('Obecna strona zawiera niezapisany tekst, który zostanie utracony w przypadku jej opuszczenia.'); });
+//]]>
+</script>
+<script src="http://redmine-dev.giat.pl/themes/circle/javascripts/theme.js"></script>
+
+<!-- page specific tags -->
+<script>
+//<![CDATA[
+var datepickerOptions={dateFormat: 'yy-mm-dd', firstDay: 1, showOn: 'button', buttonImageOnly: true, buttonImage: '/images/calendar.png', showButtonPanel: true, showWeek: true, showOtherMonths: true, selectOtherMonths: true, changeMonth: true, changeYear: true, beforeShow: beforeShowDatePicker};
+//]]>
+</script><script src="http://redmine-dev.giat.pl/javascripts/i18n/datepicker-pl.js"></script></head>
+<body class="theme-Circle project-test controller-calendars action-show">
+<div id="dialog" class="ui-dialog" title="Monday">
+
+
+<article class="font ui-dialog-content"> <p class="one">Bug #8:asdf2f2fp
+</p><p> This is the default. <br>
+Project test <br>
+Status : New<br>
+Start Date : 2017-8-31<br>
+Date Added : 2017-8-31<br>
+Assigned to : Grzegorz Pienkowski<br>
+Priority : low<br>
+</p>
+</article>
+
+<article class="font ui-dialog-content"> <p class="one">Bug #8:asdf2f2fp
+</p><p> This is the default. <br>
+Project test <br>
+Status : New<br>
+Start Date : 2017-8-31<br>
+Date Added : 2017-8-31<br>
+Assigned to : Grzegorz Pienkowski<br>
+Priority : low<br>
+</p>
+</article>
+
+
+
+</div>
+<div id="wrapper">
+
+<div class="flyout-menu js-flyout-menu">
+
+
+        <div class="flyout-menu__search">
+            <form action="/projects/test/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+            
+            <label class="search-magnifier search-magnifier--flyout" for="flyout-search">&#9906;</label>
+            <input type="text" name="q" id="flyout-search" class="small js-search-input" placeholder="Szukaj" />
+</form>        </div>
+
+        <div class="flyout-menu__avatar flyout-menu__avatar--no-avatar">
+            <a class="user active" href="http://redmine-dev.giat.pl/users/3">Iwona</a>
+        </div>
+
+        <h3>Projekt</h3>
+        <span class="js-project-menu"></span>
+
+    <h3>Ogólne</h3>
+    <span class="js-general-menu"></span>
+
+    <span class="js-sidebar flyout-menu__sidebar"></span>
+
+    <h3>Profil</h3>
+    <span class="js-profile-menu"></span>
+
+</div>
+
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a class="my-account" href="http://redmine-dev.giat.pl/my/account">Moje konto</a></li><li><a class="logout" rel="nofollow" data-method="post" href="http://redmine-dev.giat.pl/logout">Wylogowanie</a></li></ul>    </div>
+    <div id="loggedas">Zalogowany jako <a class="user active" href="http://redmine-dev.giat.pl/users/3">Iwona</a></div>
+    <ul><li><a class="home" href="http://redmine-dev.giat.pl/">Główna</a></li><li><a class="my-page" href="http://redmine-dev.giat.pl/my/page">Moja strona</a></li><li><a class="projects" href="http://redmine-dev.giat.pl/projects">Projekty</a></li><li><a class="administration" href="http://redmine-dev.giat.pl/admin">Administracja</a></li><li><a class="help" href="https://www.redmine.org/guide">Pomoc</a></li></ul></div>
+
+<div id="header">
+
+    <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+    <div id="quick-search">
+        <form action="/projects/test/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        
+        <label for='q'>
+          <a accesskey="4" href="http://redmine-dev.giat.pl/projects/test/search">Szukaj</a>:
+        </label>
+        <input type="text" name="q" id="q" size="20" class="small" accesskey="f" />
+</form>        <span class="jump-box-arrow"></span><select name="project_quick_jump_box" id="project_quick_jump_box" onchange="if (this.value != &#39;&#39;) { window.location = this.value; }"><option value=''>Skocz do projektu...</option><option value="" disabled="disabled">---</option><option value="/projects/test?jump=calendar" selected="selected">test</option></select>
+    </div>
+
+    <h1><span class="current-project">test</span></h1>
+
+    <div id="main-menu" class="tabs">
+        <ul><li>
+<a id="new-object" onclick="toggleNewObjectDropdown(); return false;" class="new-object" href="#"> + </a>
+<ul class="menu-children"><li><a accesskey="7" class="new-issue-sub" href="http://redmine-dev.giat.pl/projects/test/issues/new">Nowe zagadnienie</a></li><li><a class="new-issue-category" href="http://redmine-dev.giat.pl/projects/test/issue_categories/new">Nowa kategoria</a></li><li><a class="new-version" href="http://redmine-dev.giat.pl/projects/test/versions/new">Nowa wersja</a></li><li><a class="new-news" href="http://redmine-dev.giat.pl/projects/test/news/new">Dodaj komunikat</a></li><li><a class="new-document" href="http://redmine-dev.giat.pl/projects/test/documents/new">Nowy dokument</a></li><li><a class="new-wiki-page" href="http://redmine-dev.giat.pl/projects/test/wiki/new">New wiki page</a></li><li><a class="new-file" href="http://redmine-dev.giat.pl/projects/test/files/new">Nowy plik</a></li></ul>
+</li><li><a class="overview" href="http://redmine-dev.giat.pl/projects/test">Przegląd</a></li><li><a class="activity" href="http://redmine-dev.giat.pl/projects/test/activity">Aktywność</a></li><li><a class="roadmap" href="http://redmine-dev.giat.pl/projects/test/roadmap">Mapa</a></li><li><a class="issues" href="http://redmine-dev.giat.pl/projects/test/issues">Zagadnienia</a></li><li><a class="gantt" href="http://redmine-dev.giat.pl/projects/test/issues/gantt">Gantt</a></li><li><a class="calendar selected" href="http://redmine-dev.giat.pl/projects/test/issues/calendar">Kalendarz</a></li><li><a class="news" href="http://redmine-dev.giat.pl/projects/test/news">Komunikaty</a></li><li><a class="documents" href="http://redmine-dev.giat.pl/projects/test/documents">Dokumenty</a></li><li><a class="wiki" href="http://redmine-dev.giat.pl/projects/test/wiki">Wiki</a></li><li><a class="boards" href="http://redmine-dev.giat.pl/projects/test/boards">Fora</a></li><li><a class="files" href="http://redmine-dev.giat.pl/projects/test/files">Pliki</a></li><li><a class="repository" href="http://redmine-dev.giat.pl/projects/test/repository">Repozytorium</a></li><li><a class="settings" href="http://redmine-dev.giat.pl/projects/test/settings">Ustawienia</a></li></ul>
+        <div class="tabs-buttons" style="display:none;">
+            <button class="tab-left" onclick="moveTabLeft(this); return false;"></button>
+            <button class="tab-right" onclick="moveTabRight(this); return false;"></button>
+        </div>
+    </div>
+</div>
+
+<div id="main" class="">
+    <div id="sidebar">
+            <h3>Zagadnienia</h3>
+
+<ul>
+<li><a href="http://redmine-dev.giat.pl/projects/test/issues?set_filter=1">Zobacz wszystkie zagadnienia</a></li>
+<li><a href="http://redmine-dev.giat.pl/projects/test/issues/report">Podsumowanie</a></li>
+
+<li><a href="http://redmine-dev.giat.pl/projects/test/issues/calendar">Kalendarz</a></li>
+<li><a href="http://redmine-dev.giat.pl/projects/test/issues/gantt">Gantt</a></li>
+
+<li><a href="http://redmine-dev.giat.pl/issues/imports/new">Import</a></li>
+</ul>
+
+
+
+
+
+
+
+
+        
+    </div>
+
+    <div id="content">
+        
+        <h2>Kalendarz</h2>
+
+<form id="query_form" action="/projects/test/issues/calendar" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<input type="hidden" name="set_filter" id="set_filter" value="1" />
+<fieldset id="filters" class="collapsible ">
+  <legend onclick="toggleFieldset(this);">Filtry</legend>
+  <div style="">
+    <script>
+//<![CDATA[
+
+var operatorLabels = {"=":"równa się","!":"różni się","o":"otwarte","c":"zamknięte","!*":"brak","*":"wszystko","\u003e=":"\u003e=","\u003c=":"\u003c=","\u003e\u003c":"pomiędzy","\u003ct+":"mniejsze niż","\u003et+":"większe niż","\u003e\u003ct+":"w ciągu następnych dni","t+":"w","t":"dzisiaj","ld":"wczoraj","w":"ten tydzień","lw":"ostatni tydzień","l2w":"ostatnie 2 tygodnie","m":"ten miesiąc","lm":"ostatni miesiąc","y":"ten rok","\u003et-":"dni temu","\u003ct-":"dni od teraz","\u003e\u003ct-":"w ciągu poprzednich dni","t-":"dni temu","~":"zawiera","!~":"nie zawiera","=p":"dowolne zagadnienie w projekcie","=!p":"dowolne zagadnienie w innym projekcie","!p":"brak zagadnień w projekcie","*o":"any open issues","!o":"no open issues"};
+var operatorByType = {"list":["=","!"],"list_status":["o","=","!","c","*"],"list_optional":["=","!","!*","*"],"list_subprojects":["*","!*","="],"date":["=","\u003e=","\u003c=","\u003e\u003c","\u003ct+","\u003et+","\u003e\u003ct+","t+","t","ld","w","lw","l2w","m","lm","y","\u003et-","\u003ct-","\u003e\u003ct-","t-","!*","*"],"date_past":["=","\u003e=","\u003c=","\u003e\u003c","\u003et-","\u003ct-","\u003e\u003ct-","t-","t","ld","w","lw","l2w","m","lm","y","!*","*"],"string":["=","~","!","!~","!*","*"],"text":["~","!~","!*","*"],"integer":["=","\u003e=","\u003c=","\u003e\u003c","!*","*"],"float":["=","\u003e=","\u003c=","\u003e\u003c","!*","*"],"relation":["=","=p","=!p","!p","*o","!o","!*","*"],"tree":["=","~","!*","*"]};
+var availableFilters = {"status_id":{"type":"list_status","name":"Status","values":[["New","1"],["In Progress","2"],["Resolved","3"],["Feedback","4"],["Closed","5"],["Rejected","6"],["Czeka na akceptację","7"]]},"tracker_id":{"type":"list","name":"Typ zagadnienia","values":[["Bug","1"],["Feature","2"],["Support","3"]]},"priority_id":{"type":"list","name":"Priorytet","values":[["Low","1"],["Normal","2"],["High","3"],["Urgent","4"],["Immediate","5"]]},"author_id":{"type":"list","name":"Autor","values":[["\u003c\u003c ja \u003e\u003e","me"],["Grzegorz Pienkowski","4"],["Iwona Jozwiak","3"],["Redmine Admin","1"]]},"assigned_to_id":{"type":"list_optional","name":"Przypisany do","values":[["\u003c\u003c ja \u003e\u003e","me"],["Grzegorz Pienkowski","4"],["Iwona Jozwiak","3"],["Redmine Admin","1"]]},"assigned_to_role":{"type":"list_optional","name":"Rola osoby przypisanej","values":[["Manager","5"],["Developer","6"],["Reporter","7"]]},"fixed_version_id":{"type":"list_optional","name":"Wersja docelowa","values":[["test - wydanie 1.0","1"],["test - wydanie 1.1","3"]]},"category_id":{"type":"list_optional","name":"Kategoria","values":[["nowa","2"],["próbna","1"]]},"subject":{"type":"text","name":"Temat"},"description":{"type":"text","name":"Opis"},"created_on":{"type":"date_past","name":"Data utworzenia"},"updated_on":{"type":"date_past","name":"Data modyfikacji"},"closed_on":{"type":"date_past","name":"Data zamknięcia"},"start_date":{"type":"date","name":"Data rozpoczęcia"},"due_date":{"type":"date","name":"Data oddania"},"estimated_hours":{"type":"float","name":"Szacowany czas"},"done_ratio":{"type":"integer","name":"% Wykonania"},"is_private":{"type":"list","name":"Prywatne","values":[["tak","1"],["nie","0"]]},"watcher_id":{"type":"list","name":"Obserwator","values":[["\u003c\u003c ja \u003e\u003e","me"]]},"relates":{"type":"relation","name":"powiązane z"},"duplicates":{"type":"relation","name":"duplikuje"},"duplicated":{"type":"relation","name":"zduplikowane przez"},"blocks":{"type":"relation","name":"blokuje"},"blocked":{"type":"relation","name":"blokowane przez"},"precedes":{"type":"relation","name":"poprzedza"},"follows":{"type":"relation","name":"następuje po"},"copied_to":{"type":"relation","name":"skopiowane do"},"copied_from":{"type":"relation","name":"skopiowane z"},"parent_id":{"type":"tree","name":"Zagadnienie nadrzędne"},"child_id":{"type":"tree","name":"Podzagadnienia"},"issue_id":{"type":"integer","name":"Zagadnienie"}};
+var labelDayPlural = "dni";
+var allProjects = [["Nowy projekt testowy","2"],["test","1"],["łąśćż","3"]];
+$(document).ready(function(){
+  initFilters();
+  addFilter("status_id", "o", [""]);
+});
+
+//]]>
+</script>
+<table id="filters-table">
+</table>
+
+<div class="add-filter">
+<label for="add_filter_select">Dodaj filtr</label>
+<select id="add_filter_select"><option value="">&nbsp;</option>
+<option value="status_id">Status</option>
+<option value="tracker_id">Typ zagadnienia</option>
+<option value="priority_id">Priorytet</option>
+<option value="author_id">Autor</option>
+<option value="assigned_to_id">Przypisany do</option>
+<option value="fixed_version_id">Wersja docelowa</option>
+<option value="category_id">Kategoria</option>
+<option value="subject">Temat</option>
+<option value="description">Opis</option>
+<option value="estimated_hours">Szacowany czas</option>
+<option value="done_ratio">% Wykonania</option>
+<option value="is_private">Prywatne</option>
+<option value="watcher_id">Obserwator</option>
+<option value="issue_id">Zagadnienie</option><optgroup label="Przypisany do"><option value="assigned_to_role">Rola osoby przypisanej</option></optgroup><optgroup label="Data"><option value="created_on">Data utworzenia</option>
+<option value="updated_on">Data modyfikacji</option>
+<option value="closed_on">Data zamknięcia</option>
+<option value="start_date">Data rozpoczęcia</option>
+<option value="due_date">Data oddania</option></optgroup><optgroup label="Relations"><option value="relates">powiązane z</option>
+<option value="duplicates">duplikuje</option>
+<option value="duplicated">zduplikowane przez</option>
+<option value="blocks">blokuje</option>
+<option value="blocked">blokowane przez</option>
+<option value="precedes">poprzedza</option>
+<option value="follows">następuje po</option>
+<option value="copied_to">skopiowane do</option>
+<option value="copied_from">skopiowane z</option>
+<option value="parent_id">Zagadnienie nadrzędne</option>
+<option value="child_id">Podzagadnienia</option></optgroup></select>
+</div>
+
+<input type="hidden" name="f[]" id="f_" value="" />
+
+  </div>
+</fieldset>
+
+<p style="float:right;">
+  <a accesskey="p" href="http://redmine-dev.giat.pl/projects/test/issues/calendar?month=8&amp;year=2017">« Sierpień</a> | <a accesskey="n" href="http://redmine-dev.giat.pl/projects/test/issues/calendar?month=10&amp;year=2017">Październik »</a>
+</p>
+
+<p class="buttons">
+<label for="month">Miesiąc</label>
+<select id="month" name="month">
+<option value="1">Styczeń</option>
+<option value="2">Luty</option>
+<option value="3">Marzec</option>
+<option value="4">Kwiecień</option>
+<option value="5">Maj</option>
+<option value="6">Czerwiec</option>
+<option value="7">Lipiec</option>
+<option value="8">Sierpień</option>
+<option value="9" selected="selected">Wrzesień</option>
+<option value="10">Październik</option>
+<option value="11">Listopad</option>
+<option value="12">Grudzień</option>
+</select>
+
+<label for="year">Rok</label>
+<select id="year" name="year">
+<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017" selected="selected">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+</select>
+
+
+<a href="#" onclick="$(&quot;#query_form&quot;).submit(); return false;" class="icon icon-checked">Ustaw</a>
+<a class="icon icon-reload" href="http://redmine-dev.giat.pl/projects/test/issues/calendar?set_filter=1">Wyczyść</a>
+</p>
+</form>
+
+<table class="cal">
+<thead>
+<tr><th scope="col" title="Tydzień" class="week-number"></th><th scope="col">Poniedziałek</th><th scope="col">Wtorek</th><th scope="col">Środa</th><th scope="col">Czwartek</th><th scope="col">Piątek</th><th scope="col">Sobota</th><th scope="col">Niedziela</th></tr>
+</thead>
+<tbody>
+<tr>
+<td class='week-number' title='Tydzień'>35</td>
+<td class="odd">
+<p class="day-num">28</p>
+</td>
+
+
+<td class="odd">
+<p class="day-num">29</p>
+</td>
+
+
+<td class="odd">
+<p class="day-num">30</p>
+</td>
+
+
+<td class="odd">
+<p class="day-num">31</p>
+  <div class="issue tracker-1 status-1 priority-1 priority-lowest overdue starting  tooltip">
+  
+  <a class="issue tracker-1 status-1 priority-1 priority-lowest overdue" href="http://redmine-dev.giat.pl/issues/8">Bug #8</a>: zczdcdec
+  <span class="tip"><a class="issue tracker-1 status-1 priority-1 priority-lowest overdue" href="http://redmine-dev.giat.pl/issues/8">Bug #8</a>: zczdcdec<br /><br /><strong>Projekt</strong>: <a href="http://redmine-dev.giat.pl/projects/test">test</a><br /><strong>Status</strong>: New<br /><strong>Data rozpoczęcia</strong>: 2017-08-31<br /><strong>Data oddania</strong>: 2017-09-09<br /><strong>Przypisany do</strong>: Grzegorz Pienkowski<br /><strong>Priorytet</strong>: Low</span>
+  </div>
+</td>
+
+
+<td class="even" >
+<p class="day-num">1</p>
+</td>
+
+
+<td class="even ">
+<p class="day-num">2</p>
+</td>
+
+
+<td class="even" id="op">
+<p class="day-num">3</p>
+</td>
+</tr><tr>
+<td class='week-number' title='Tydzień'>36</td>
+<td class="even">
+<p class="day-num">4</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">5</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">6</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">7</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">8</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">9</p>
+  <div class="issue tracker-1 status-1 priority-1 priority-lowest overdue  ending tooltip">
+  
+  <a class="issue tracker-1 status-1 priority-1 priority-lowest overdue" href="http://redmine-dev.giat.pl/issues/8">Bug #8</a>: zczdcdec
+  <span class="tip"><a class="issue tracker-1 status-1 priority-1 priority-lowest overdue" href="http://redmine-dev.giat.pl/issues/8">Bug #8</a>: zczdcdec<br /><br /><strong>Projekt</strong>: <a href="http://redmine-dev.giat.pl/projects/test">test</a><br /><strong>Status</strong>: New<br /><strong>Data rozpoczęcia</strong>: 2017-08-31<br /><strong>Data oddania</strong>: 2017-09-09<br /><strong>Przypisany do</strong>: Grzegorz Pienkowski<br /><strong>Priorytet</strong>: Low</span>
+  </div>
+</td>
+
+
+<td class="even">
+<p class="day-num">10</p>
+</td>
+</tr><tr>
+<td class='week-number' title='Tydzień'>37</td>
+<td class="even">
+<p class="day-num">11</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">12</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">13</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">14</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">15</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">16</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">17</p>
+</td>
+</tr><tr>
+<td class='week-number' title='Tydzień'>38</td>
+<td class="even">
+<p class="day-num">18</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">19</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">20</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">21</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">22</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">23</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">24</p>
+</td>
+</tr><tr>
+<td class='week-number' title='Tydzień'>39</td>
+<td class="even">
+<p class="day-num">25</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">26</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">27</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">28</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">29</p>
+</td>
+
+
+<td class="even">
+<p class="day-num">30</p>
+</td>
+
+
+<td class="odd">
+<p class="day-num">1</p>
+</td>
+
+</tr>
+</tbody>
+</table>
+
+
+
+
+<p class="legend cal">
+  <span class="starting">zadanie zaczynające się dzisiaj</span>
+  <span class="ending">zadanie kończące się dzisiaj</span>
+  <span class="starting ending">zadanie zaczynające i kończące się dzisiaj</span>
+</p>
+
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Ładowanie...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="https://www.redmine.org/">Redmine</a> &copy; 2006-2016 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+
+<script src="dialog.js" ></script>
+
+</body>
+</html>

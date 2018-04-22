@@ -1,0 +1,84 @@
+#dialog{
+
+    background:lightblue;
+}
+
+Basic{background:darkblue;}
+
+
+
+button{padding:6px;background:darkred;font-size:1.5em;color:white;}
+
+
+.both{background:darkblue;}
+
+
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: .8em;
+}
+
+.ui-widget-content {
+
+    border: 1px solid #90d93f;
+    color: #222222;
+}
+
+.ui-dialog {
+    left: 0;
+    outline: 0 none;
+    padding: 0 !important;
+    position: absolute;
+    top: 0;
+}
+
+
+
+.ui-dialog .ui-dialog-content {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    overflow: auto;
+    position: relative;
+    padding: 0 !important;
+}
+
+.ui-widget-header {
+    background: snow;
+    border: 0;
+    color: #fff;
+    font-weight: normal;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    padding: 0.1em .3em;
+    position: relative;
+    font-size: 1.3em;
+    background:none;
+}
+
+article{
+    padding:7px;
+
+
+
+}
+.one{color:darkred;}
+
+.two{padding:12px;}
+#dialog  {background:none;}
+.font{font-size:.8em;letter-spacing:1px;}
+.ui-dialog .ui-dialog-titlebar-close {background:nore;border:none;}
+
+.ui-icon{width:20px;height:20px ;}
+article:nth-child(1){border-bottom:1px dashed darkred;margin:0 14px;}
+
+article{margin:0 11px;font-weight:600;}
+
+
+.ui-resizable{box-shadow:0 0 15px black;}
+.one{font-size:18px;font-weight:bold;}
+.ui-button-icon-primary ,.ui-icon ,.ui-icon-closethick{
+    height:15px;
+    width:15px;
+    outline:none;
+}
